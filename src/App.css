@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button;
+  display: inline-block;
+  cursor: default;
+  flex: 0 0 auto;
+  align-self: stretch;
+  -webkit-user-select: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-user-modify: read-only;
+}
+/* .mdl-textfield:not(.is-dirty) input::-webkit-datetime-edit {
+  color: transparent; 
+}
+
+input:focus::-webkit-datetime-edit {
+ color: rgba(255, 255, 255, .46) !important; 
+}
+input[value="0000-00-00"]::-webkit-datetime-edit {
+  color: transparent; 
+} */
+/* 
+::-webkit-datetime-edit { color: transparent; }
+:focus::-webkit-datetime-edit { color: #000; } */
+
+input[value=""]::-webkit-datetime-edit{ color: transparent; }
+input:focus::-webkit-datetime-edit{ color: #000; }
